@@ -13,8 +13,12 @@ sudo yum install epel-release
 sudo yum update -y && sudo reboot
 
 
+46.41.134.148
 
+https://www.digitalocean.com/community/tutorials/how-to-use-apache-as-a-reverse-proxy-with-mod_proxy-on-centos-7
 
+sudo firewall-cmd --zone=public --permanent --add-port=8080/tcp
+sudo firewall-cmd --reload
 
 
 
