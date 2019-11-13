@@ -25,7 +25,18 @@ sudo firewall-cmd --reload
 
 
 
+[root@server-1460191-1 conf.d]# pwd
+/etc/httpd/conf.d
 
+vi default-site.conf
+
+<VirtualHost *:80>
+   ProxyPreserveHost On
+
+
+   ProxyPass / http://localhost:8080/
+   ProxyPassReverse / http://localhost:8080/
+</VirtualHost>
 
 
 
