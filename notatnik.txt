@@ -45,6 +45,40 @@ vi default-site.conf
 
 
 
+Przydatne komendy:
+
+man ps - manual 
+mount - informacje o zamontowanych nosnikach?
+htop
+top - informacje o uzyciu pamieci/procka
+ 	
+ps aux | grep nginx - info o uzyciu pamieci przez proces
+
+netstat
+netstat -tupln
+sudo netstat -tulpn - info o portach i nas³uchiwaniu ip
+
+du -sh nazwa_folderu - disk usage, uzycie pamieci przez folder
+df -ah -ile pamieci dyskowej uzywamy
+
+service tomcat status
+systemctl status tomcat
+
+ip addr show 
+ifconfig - aktualne ip
+
+uname -a  - info o systemie i distro
+
+
+
+
+
+
+
+
+
+
+
 
 
 
