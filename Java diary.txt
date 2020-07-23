@@ -1,0 +1,19 @@
+Kasowanie Intellij licencja:
+1.
+Remove all Key from the registry \HKEY_CURRENT_USER\Software\JavaSoft\Prefs\jetbrains\(idea??)rider begining with evlsprt :
+2.
+Edit options.xml from userhome directory and following path like bellow and remove all property conaining evlsprt
+C:\Users\Luki\.IntelliJIdea2019.2\config\options\other.xml 
+3.
+Deleta/renam all from:
+file:///C:/Users/Luki/.IntelliJIdea2019.2/config/eval/
+
+
+
+
+
+
+
+d:\Programy\Java\jdk1.8.0_191\src\java>
+
+javadoc -d D:\DOKUMENTACJA -sourcepath D:\Programy\Java\jdk1.8.0_191\src  java.applet java.awt java.beans java.io java.lang java.math java.net java.nio java.rmi java.security java.sql java.text java.time java.util

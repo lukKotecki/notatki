@@ -1,25 +1,5 @@
-d:\Programy\Java\jdk1.8.0_191\src\java>
 
-javadoc -d D:\DOKUMENTACJA -sourcepath D:\Programy\Java\jdk1.8.0_191\src  java.applet java.awt java.beans java.io java.lang java.math java.net java.nio java.rmi java.security java.sql java.text java.time java.util
-
-
-
-openshift:
-
-oc new-app jboss-webserver30-tomcat8-openshift:1.2~https://github.com/lukkotecki/os-sample-java-web.git
-
-oc get services
-oc expose svc <service name>
-oc get routes
-
-oc start-build <service name>
-
-
-
-
-os-sample-java-web-lukasprojekt.apps.ca-central-1.starter.openshift-online.com
-
-
+ 
 lsb_release
 sudo netstat -tulpn | grep :80
 
@@ -58,41 +38,7 @@ Restart=always
 [Install]
 WantedBy=multi-user.target
 
-
-
-
-TEN NIE DZIALA:@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-root@server-1460191-1:/etc/systemd/system# vi tomcat.service
-Description=Tomcat 9 servlet container
-After=network.target
-
-[Service]
-Type=forking
-
-User=tomcat
-Group=tomcat
-RestartSec=10
-Restart=always
-
-Environment="JAVA_HOME=/usr/lib/jvm/default-java"
-Environment="JAVA_OPTS=-Djava.security.egd=file:///dev/urandom -Djava.awt.headless=true"
-
-Environment="CATALINA_BASE=/opt/tomcat/latest"
-Environment="CATALINA_HOME=/opt/tomcat/latest"
-Environment="CATALINA_PID=/opt/tomcat/latest/temp/tomcat.pid"
-Environment="CATALINA_OPTS=-Xms512M -Xmx1024M -server -XX:+UseParallelGC"
-
-ExecStart=/opt/tomcat/latest/bin/startup.sh
-ExecStop=/opt/tomcat/latest/bin/shutdown.sh
-
-[Install]
-WantedBy=multi-user.target
-
-
-TEN NIE DZIALA: KONIEC@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@2
-
-
-
+ 
 
 sudo systemctl daemon-reload
 
