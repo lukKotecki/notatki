@@ -9,11 +9,28 @@ Deleta/renam all from:
 file:///C:/Users/Luki/.IntelliJIdea2019.2/config/eval/
 
 
-
-
-
+/////////////////////////////////////////////////////////
 
 
 d:\Programy\Java\jdk1.8.0_191\src\java>
 
 javadoc -d D:\DOKUMENTACJA -sourcepath D:\Programy\Java\jdk1.8.0_191\src  java.applet java.awt java.beans java.io java.lang java.math java.net java.nio java.rmi java.security java.sql java.text java.time java.util
+
+
+/////////////////////////////////////////////////////////
+
+
+
+If you use Maven, you can run the application by using ./mvnw spring-boot:run. Alternatively, you can build the JAR file with ./mvnw clean package and then run the JAR file, as follows:
+java -jar target/gs-serving-web-content-0.1.0.jar
+
+
+/////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+/////////////////////////////////////////////////////////

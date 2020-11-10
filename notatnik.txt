@@ -25,12 +25,50 @@ ifconfig - aktualne ip
 uname -a  - info o systemie i distro
 
 
+SSH log:
+last -f /var/log/btmp
+    /var/log/wtmp – Logs of last login sessions
+    /var/run/utmp – Logs of the current login sessions
+    /var/log/btmp – Logs of the bad login attempts
+
+
+ ODPALANIE VNC VIEVER W DUZEJ ROZDZIELCZOSCI
+sudo nano /boot/config.txt
+hdmi_ignore_edid=0xa5000080
+hdmi_group=2
+hdmi_mode=85
+
+comment this line
+#dtoverlay=vc4-kms-v3d
+framebuffer_width=1900
+framebuffer_height=1024
 
 
 
 
+Tworzenie exatucable jar  Tworzenie exatucable jar  Tworzenie exatucable jar  Tworzenie exatucable jar  Tworzenie exatucable jar  Tworzenie exatucable jar  
 
+java -cp app.jar com.somepackage.SomeClass
 
+java -jar plik.jar
+FatJar:
+ <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+Tworzenie exatucable jar  Tworzenie exatucable jar  Tworzenie exatucable jar  Tworzenie exatucable jar  Tworzenie exatucable jar  Tworzenie exatucable jar  
 
 
 
