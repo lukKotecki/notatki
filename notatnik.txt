@@ -71,8 +71,10 @@ FatJar:
 Tworzenie exatucable jar  Tworzenie exatucable jar  Tworzenie exatucable jar  Tworzenie exatucable jar  Tworzenie exatucable jar  Tworzenie exatucable jar  
 
 
-
-
+FTP server on linux
+sudo apt-get install vsftpd
+sudo service vsftpd start    -start or stop - used to start and stop the ftp server
+hostname -I      -sprawdzenie jakie ma sie IP
 
 
 
