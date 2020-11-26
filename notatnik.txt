@@ -26,10 +26,13 @@ uname -a  - info o systemie i distro
 
 
 SSH log:
-last -f /var/log/btmp
+sudo last -f /var/log/btmp
     /var/log/wtmp – Logs of last login sessions
     /var/run/utmp – Logs of the current login sessions
     /var/log/btmp – Logs of the bad login attempts
+
+SSH opened sesions:
+ss | grep -i ssh
 
 
  ODPALANIE VNC VIEVER W DUZEJ ROZDZIELCZOSCI
